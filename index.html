@@ -1,37 +1,75 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Day Planner</title>
-  </head>
-  <body>
-    <!--Header-->
-    <div class="row">
-      <div class="col"></div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+  <title>Day Planner</title>
+</head>
+
+<body>
+  <!--Header-->
+  <div class="row border-bottom">
+    <div class="col-12 flex-column text-center p-4">
+      <h1>Work Day Planner</h1>
+      <p id="current">222</p>
     </div>
-    
-    <!--Content-->
-    <div class="row">
-      <!--Time Column-->
-      <div class="col" id="time"></div>
-      <!--Input Column-->
-      <div class="col" id="input"></div>
-      <!--Button Column-->
-      <div class="col" id="button"></div>
-    </div>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./javascript/moment.js"></script>
-    <script src="./javascript/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!--Content-->
+  <div class="row w-100">
+    <!--Time Column-->
+    <div class="col-2 flex-column" id="time">
+      <div class="border p-3">9 AM</div>
+      <div class="border p-3">10 AM</div>
+      <div class="border p-3">11 AM</div>
+      <div class="border p-3">12 AM</div>
+      <div class="border p-3">1 PM</div>
+      <div class="border p-3">2 PM</div>
+      <div class="border p-3">3 PM</div>
+      <div class="border p-3">4 PM</div>
+      <div class="border p-3">5 PM</div>
+    </div>
+    <!--Input Column-->
+    <div class="col-8 flex-column" id="input">
+      <textarea class="form-control pb-1 mb-2" id="inputdefault" type="text" row = "3"></textarea>
+      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
+      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
+      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
+      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
+      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
+      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
+      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
+
+    </div>
+    <!--Button Column-->
+    <div class="col-2 flex-column" id="button">
+      <div><button type="button" class="btn btn-primary">Primary</button></div>
+      <div><button type="button" class="btn btn-primary">Primary</button></div>
+      <div><button type="button" class="btn btn-primary">Primary</button></div>
+      <div><button type="button" class="btn btn-primary">Primary</button></div>
+      <div><button type="button" class="btn btn-primary">Primary</button></div>
+      <div><button type="button" class="btn btn-primary">Primary</button></div>
+      <div><button type="button" class="btn btn-primary">Primary</button></div>
+      <div><button type="button" class="btn btn-primary">Primary</button></div>
+      <div><button type="button" class="btn btn-primary">Primary</button></div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="./javascript/moment.js"></script>
+  <script src="./javascript/script.js"></script>
+  <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script> -->
+
+
 </html>
