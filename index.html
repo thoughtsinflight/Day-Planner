@@ -11,6 +11,8 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/3af8e5aa95.js" crossorigin="anonymous"></script>
+
 
   <title>Day Planner</title>
 </head>
@@ -26,50 +28,116 @@
 
   <!--Content-->
   <div class="row w-100">
-    <!--Time Column-->
-    <div class="col-2 flex-column" id="time">
-      <div class="border p-3">9 AM</div>
-      <div class="border p-3">10 AM</div>
-      <div class="border p-3">11 AM</div>
-      <div class="border p-3">12 AM</div>
-      <div class="border p-3">1 PM</div>
-      <div class="border p-3">2 PM</div>
-      <div class="border p-3">3 PM</div>
-      <div class="border p-3">4 PM</div>
-      <div class="border p-3">5 PM</div>
-    </div>
     <!--Input Column-->
-    <div class="col-8 flex-column" id="input">
-      <textarea class="form-control pb-1 mb-2" id="inputdefault" type="text" row = "3"></textarea>
-      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
-      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
-      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
-      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
-      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
-      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
-      <textarea class="form-control pb-1 my-2" id="inputdefault" type="text" row = "3"></textarea>
+    <div class="col flex-column ml-3 mt-3" id="input">
+      <!-- 9 AM Input Block -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">9 AM</span>
+        </div>
+        <input type="text" id="9" class="form-control text-dark " placeholder="Today's Agenda" aria-label="Today's Agenda"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary fas fa-save button" data-num="9" type="button"></button>
+        </div>
+      </div>
+      <!-- 10 AM Input Block -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">10 AM</span>
+        </div>
+        <input type="text" id="10" class="form-control text-dark " placeholder="Today's Agenda" aria-label="Today's Agenda"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary fas fa-save button" data-num="10" type="button"></button>
+        </div>
+      </div>
+      <!-- 11 AM Input Block -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">11 AM</span>
+        </div>
+        <input type="text" id="11" class="form-control text-dark " placeholder="Today's Agenda" aria-label="Today's Agenda"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary fas fa-save button" data-num="11" type="button"></button>
+        </div>
+      </div>
+      <!-- 12 AM Input Block -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">12 AM</span>
+        </div>
+        <input type="text" id="12" class="form-control text-dark " placeholder="Today's Agenda" aria-label="Today's Agenda"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary fas fa-save button" data-num="12" type="button"></button>
+        </div>
+      </div>
+      <!-- 1 PM Input Block -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">1 PM</span>
+        </div>
+        <input type="text" id="13" class="form-control text-dark " placeholder="Today's Agenda" aria-label="Today's Agenda"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary fas fa-save button" data-num="13" type="button"></button>
+        </div>
+      </div>
+      <!-- 2 PM Input Block -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">2 PM</span>
+        </div>
+        <input type="text" id="14" class="form-control text-dark " placeholder="Today's Agenda" aria-label="Today's Agenda"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary fas fa-save button" data-num="14" type="button"></button>
+        </div>
+      </div>
+      <!-- 3 PM Input Block -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">3 PM</span>
+        </div>
+        <input type="text" id= "15" class="form-control text-dark " placeholder="Today's Agenda" aria-label="Today's Agenda"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary fas fa-save button" data-num="15" type="button"></button>
+        </div>
+      </div>
+      <!-- 4 PM Input Block -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">4 PM</span>
+        </div>
+        <input type="text" id="16" class="form-control text-dark " placeholder="Today's Agenda" aria-label="Today's Agenda"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary fas fa-save button" data-num="16" type="button"></button>
+        </div>
+      </div>
+      <!-- 5 PM Input Block -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">5 PM</span>
+        </div>
+        <input type="text" id="17" class="form-control text-dark " placeholder="Today's Agenda" aria-label="Today's Agenda"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary fas fa-save button" data-num="17" type="button"></button>
+        </div>
+      </div>
 
     </div>
     <!--Button Column-->
-    <div class="col-2 flex-column" id="button">
-      <div><button type="button" class="btn btn-primary">Primary</button></div>
-      <div><button type="button" class="btn btn-primary">Primary</button></div>
-      <div><button type="button" class="btn btn-primary">Primary</button></div>
-      <div><button type="button" class="btn btn-primary">Primary</button></div>
-      <div><button type="button" class="btn btn-primary">Primary</button></div>
-      <div><button type="button" class="btn btn-primary">Primary</button></div>
-      <div><button type="button" class="btn btn-primary">Primary</button></div>
-      <div><button type="button" class="btn btn-primary">Primary</button></div>
-      <div><button type="button" class="btn btn-primary">Primary</button></div>
-    </div>
-  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-  <script src="./javascript/moment.js"></script>
-  <script src="./javascript/script.js"></script>
-  <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script> -->
+    <script src="./javascript/moment.js"></script>
+    <script src="./javascript/script.js"></script>
+    <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script> -->
 
 
 </html>
